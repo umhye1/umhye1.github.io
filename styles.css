@@ -14,3 +14,20 @@ body{background:#f5f5f7;-webkit-font-smoothing:antialiased;letter-spacing:-.2px}
 @media(max-width:600px){.header-inner,main,footer{width:calc(100% - 28px)}main{padding-top:20px}.section{padding:22px 18px;border-radius:18px;margin-bottom:18px}.section-heading h2{font-size:21px}.profile{padding:23px 18px;border-radius:12px;gap:20px}.profile-title h1{font-size:21px}.intro p{font-size:14px}.contact-links{display:grid}.qualifications{padding-top:25px}.skills-list>div{grid-template-columns:81px 1fr}.skills-list dt{font-size:12px}.tech-tag{font-size:11px;padding:4px 7px}.cert-list>div{font-size:13px}.project-summary strong{font-size:18px}.project-side>span:last-child{padding:0 5px}.activity h3{font-size:16px}.project-body{padding:19px 13px 24px}.section-heading>p{max-width:157px;font-size:10px}.profile-title>p{font-size:16px}}
 @media(max-width:360px){.skills-list>div{grid-template-columns:1fr}.profile{padding:21px 15px}.profile-title h1{font-size:20px}}
 @media print{body{background:white}.section{border:0;box-shadow:none;padding:0}.profile{background:white}}
+
+/* Portrait beside the opening introduction. */
+.profile{grid-template-columns:minmax(0,390px) minmax(0,1fr);gap:28px}
+.identity-heading{display:flex;align-items:center;gap:20px}
+.identity-text{min-width:0}
+.profile-photo{display:block;width:104px;height:auto;flex:0 0 104px;border-radius:12px;border:1px solid rgba(0,0,0,.05)}
+.identity-text .role-label{font-size:10px;letter-spacing:.8px;margin-bottom:10px}
+.identity-text .profile-title h1{font-size:22px;line-height:1.5}
+.identity-text .education{margin-top:10px}
+@media(max-width:1160px){.profile{grid-template-columns:1fr}.intro{border-left:0;border-top:1px solid #dedee3;padding:20px 0 0}.contact-links{display:flex;flex-wrap:wrap;gap:10px 19px}}
+@media(max-width:600px){.identity-heading{gap:14px}.profile-photo{width:82px;flex-basis:82px;border-radius:9px}.identity-text .profile-title h1{font-size:19px}.identity-text .profile-title>p{font-size:14px}.identity-text .role-label{font-size:9px;letter-spacing:.4px;margin-bottom:6px}.identity-text .education{font-size:11px;margin-top:8px}.contact-links{display:grid}}
+@media(max-width:360px){.identity-heading{gap:10px}.profile-photo{width:70px;flex-basis:70px}.identity-text .profile-title h1{font-size:17px}}
+
+/* White introduction surface keeps the portrait distinct. */
+.profile{background:#ffffff;border:1px solid #e4e8ed}
+.profile-photo{border:1px solid #e0e3e8;box-shadow:0 3px 12px rgba(24,39,58,.08)}
+@media print{.profile{background:white;border:0}.profile-photo{box-shadow:none}}
